@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  ChromeTest</title>
+<title>TestNG:  SafariTest</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<h2 align='center'>SafariTest</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 18 00:47:55 IST 2021</td>
+<td>Started on:</td><td>Tue May 18 00:49:20 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>84 seconds (84276 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71707 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.SearchMobile.searchMobileAndFetchResult()'><b>searchMobileAndFetchResult</b><br>Test class: test.SearchMobile</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {error=no such element, message=Unable to locate element: //div[text()=&apos;SAMSUNG&apos;]/.., stacktrace=WebDriverError@chrome://marionette/content/error.js:181:5
-NoSuchElementError@chrome://marionette/content/error.js:393:5
-element.find/&lt;/&lt;@chrome://marionette/content/element.js:306:16
-}
+<td><div><pre>org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {error=no such element, message=, stacktrace=}
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P5JKHIML&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -89,9 +86,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pages.dashboardPage.selectBrandName(dashboardPage.java:135)
-	at test.SearchMobile.searchMobileAndFetchResult(SearchMobile.java:28)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at pages.dashboardPage.searchProduct(dashboardPage.java:67)
+	at test.SearchMobile.searchMobileAndFetchResult(SearchMobile.java:25)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
@@ -99,11 +96,8 @@ Driver info: driver.version: RemoteWebDriver
 Caused by: java.lang.ClassCastException: class com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to class org.openqa.selenium.WebElement (com.google.common.collect.Maps$TransformedEntriesMap and org.openqa.selenium.WebElement are in unnamed module of loader &apos;app&apos;)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:331)
 	... 28 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152473973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1152473973'><pre>org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {error=no such element, message=Unable to locate element: //div[text()=&apos;SAMSUNG&apos;]/.., stacktrace=WebDriverError@chrome://marionette/content/error.js:181:5
-NoSuchElementError@chrome://marionette/content/error.js:393:5
-element.find/&lt;/&lt;@chrome://marionette/content/element.js:306:16
-}
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676926016", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1676926016'><pre>org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: {error=no such element, message=, stacktrace=}
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P5JKHIML&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -113,9 +107,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pages.dashboardPage.selectBrandName(dashboardPage.java:135)
-	at test.SearchMobile.searchMobileAndFetchResult(SearchMobile.java:28)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at pages.dashboardPage.searchProduct(dashboardPage.java:67)
+	at test.SearchMobile.searchMobileAndFetchResult(SearchMobile.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,8 +134,8 @@ Caused by: java.lang.ClassCastException: class com.google.common.collect.Maps$Tr
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:331)
 	... 28 more
 </pre></div></td>
-<td>66</td>
-<td>test.SearchMobile@3c0be339</td></tr>
+<td>60</td>
+<td>test.SearchMobile@343570b7</td></tr>
 </table><p>
 </body>
 </html>

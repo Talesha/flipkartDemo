@@ -52,14 +52,14 @@ public class TestBase {
 				caps.setCapability("browser_version", "latest");
 				caps.setCapability("browserstack.local", "false");
 				caps.setCapability("browserstack.selenium_version", "3.10.0");
-				driver=new RemoteWebDriver(new java.net.URL(URL), caps);
+				driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				DesiredCapabilities caps = new DesiredCapabilities();
 				caps.setCapability("os", "Windows");
 				caps.setCapability("os_version", "10");
 				caps.setCapability("browser", "Chrome");
 				caps.setCapability("browser_version", "latest");
-				driver=new RemoteWebDriver(new java.net.URL(URL), caps);
+				driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 			} else if (browser.equalsIgnoreCase("IE")) {
 				DesiredCapabilities caps = new DesiredCapabilities();
 				caps.setCapability("os", "Windows");
@@ -68,7 +68,25 @@ public class TestBase {
 				caps.setCapability("browser_version", "11.0");
 				caps.setCapability("browserstack.local", "false");
 				caps.setCapability("browserstack.selenium_version", "3.5.2");
-				driver=new RemoteWebDriver(new java.net.URL(URL), caps);
+				driver = new RemoteWebDriver(new java.net.URL(URL), caps);
+			} else if (browser.equalsIgnoreCase("Safari")) {
+				DesiredCapabilities caps = new DesiredCapabilities();
+				caps.setCapability("os", "OS X");
+				caps.setCapability("os_version", "Catalina");
+				caps.setCapability("browser", "Safari");
+				caps.setCapability("browser_version", "13.0");
+				caps.setCapability("browserstack.local", "false");
+				caps.setCapability("browserstack.selenium_version", "3.14.0");
+				driver = new RemoteWebDriver(new java.net.URL(URL), caps);
+			} else if (browser.equalsIgnoreCase("Edge")) {
+				DesiredCapabilities caps = new DesiredCapabilities();
+				caps.setCapability("os", "Windows");
+				caps.setCapability("os_version", "10");
+				caps.setCapability("browser", "Edge");
+				caps.setCapability("browser_version", "89.0");
+				caps.setCapability("browserstack.local", "false");
+				caps.setCapability("browserstack.selenium_version", "3.5.2");
+				driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 			} else {
 				throw new Exception("Browser is not correct");
 			}

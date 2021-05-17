@@ -25,6 +25,7 @@ public class SearchMobile extends TestBase{
     	dashboard.searchProduct("Samsung Galaxy S10");
     	dashboard.clickOnMobileFilter();
     	dashboard.clickOnFlipAssured();
+    	dashboard.selectBrandName();
     	dashboard.clickOnHighToLow();
     	dashboard.printPrductNameAndPrice();
     	dashboard.printProductLinkText();

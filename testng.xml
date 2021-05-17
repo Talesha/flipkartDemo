@@ -22,5 +22,19 @@
 			</class>
 		</classes>
 	</test>
+	<test name="SafariTest">
+		<parameter name="browser" value="Safari" />
+		<classes>
+			<class name="test.SearchMobile">
+			</class>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="test.SearchMobile">
+			</class>
+		</classes>
+	</test>
 
 </suite>

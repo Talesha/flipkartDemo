@@ -50,6 +50,9 @@ public class dashboardPage {
 	@FindBy(xpath = "//*[@id='container']/div/div[3]/div[1]/div[2]/div/div/div/div/a")
 	public List<WebElement> listOfLinkText;
 
+	@FindBy(xpath="//div[text()='SAMSUNG']/..")
+	public WebElement brandLabel;
+	
 	public dashboardPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -128,4 +131,7 @@ public class dashboardPage {
 		}
 	}
 
+	public void selectBrandName() {
+		brandLabel.click();
+	}
 }
