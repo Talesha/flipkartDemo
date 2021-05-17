@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="test.SearchMobile">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="searchMobileAndFetchResult"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.SearchMobile -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="2" parallel="tests" name="IETest(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="test.SearchMobile">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="searchMobileAndFetchResult"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.SearchMobile -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
